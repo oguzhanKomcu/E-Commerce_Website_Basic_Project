@@ -14,9 +14,10 @@ namespace EWBP.Domain.Models.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public decimal Dimension { get; set; }
+        public string Size { get; set; }
         public string Color { get; set; }
         public string ImagePath { get; set; }
+        public int Stock { get; set; }
         public int Category_Id { get; set; }
         public Category Category { get; set; }
 

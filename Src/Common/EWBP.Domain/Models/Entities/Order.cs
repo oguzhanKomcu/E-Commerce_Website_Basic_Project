@@ -11,7 +11,7 @@ namespace EWBP.Domain.Models.Entities
     public class Order : IBaseEntity
     {
         public int Id { get; set; }
-        public int AppUser_Id { get; set; }
+        public string User_Id { get; set; }
         public AppUser AppUser { get; set; }
         public int Amount { get; set; }
 

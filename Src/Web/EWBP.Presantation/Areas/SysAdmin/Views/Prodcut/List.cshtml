@@ -1,0 +1,49 @@
+﻿@model List<GetProductVM>
+@{
+    ViewData["Title"] = "List";
+}
+
+<div class="col-sm-12">
+    <div class="card">
+        <div class="card-header">
+            <h4>Product List</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Category Name</th>
+                        <th>Price</th>
+                        <th>Image</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.Description</td>
+                            <td>@item.CategoryName</td>
+                            <td>@item.Price.ToString("C2")</td>
+                            <td>
+                                <img src="@item.ImagePath" width="100" height="100">
+                            </td>
+                          
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+       
+    </div>
+</div>
+
+
+
+

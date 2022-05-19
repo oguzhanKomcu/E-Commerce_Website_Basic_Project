@@ -16,6 +16,9 @@ namespace EWBP.Infrastructure.Entity_Configuration
             builder.Property(x => x.Name).IsRequired();
             builder.Property(x => x.Description).IsRequired();
             builder.Property(x => x.ImagePath).IsRequired();
+            builder.Property(x => x.Size).IsRequired();
+            builder.Property(x => x.Color).IsRequired();
+            builder.Property(x => x.Stock).IsRequired();
             builder.Property(x => x.Price)
                 .HasPrecision(18, 5)
                 .HasConversion<decimal>()

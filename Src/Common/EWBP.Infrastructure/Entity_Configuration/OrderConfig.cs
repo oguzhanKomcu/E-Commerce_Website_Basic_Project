@@ -21,7 +21,7 @@ namespace EWBP.Infrastructure.Entity_Configuration
 
             builder.HasOne(x => x.AppUser)
                 .WithMany(x => x.Orders)
-                .HasForeignKey(x => x.AppUser_Id);
+                .HasForeignKey(x => x.User_Id);
 
 
 

@@ -1,5 +1,6 @@
 ﻿using EWBP.Domain.Models.Entities;
 using EWBP.Infrastructure.Entity_Configuration;
+using EWBP.Infrastructure.FakeData;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -32,7 +33,8 @@ namespace EWBP.Infrastructure
             builder.ApplyConfiguration(new OrderDetailConfig());
 
 
-            //builder.ApplyConfiguration(new PageSeeding());
+            builder.ApplyConfiguration(new CategoryFakeData());
+            builder.ApplyConfiguration(new ProductFakeData());
 
             base.OnModelCreating(builder);
         }

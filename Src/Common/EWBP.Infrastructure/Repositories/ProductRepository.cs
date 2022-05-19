@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EWBP.Infrastructure.Repositories
 {
-    public class ProductRepository : BaseRepository<Product>, IProdcutRepository
+    public class ProductRepository : BaseRepository<Product>, IProductRepository
     {
         public ProductRepository(AppDbContext appDbContext) : base(appDbContext)
         {

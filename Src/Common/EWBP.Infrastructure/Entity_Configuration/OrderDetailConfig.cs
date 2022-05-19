@@ -23,7 +23,7 @@ namespace EWBP.Infrastructure.Entity_Configuration
 
             builder.HasOne(x => x.Product)
                 .WithMany(x => x.Order_Details)
-                .HasForeignKey(x => x.Product_Id).OnDelete(DeleteBehavior.Restrict); ;
+                .HasForeignKey(x => x.Product_Id) ;
 
 
             builder.HasOne(x => x.Order)

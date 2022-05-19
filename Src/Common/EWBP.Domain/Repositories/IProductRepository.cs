@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EWBP.Domain.Repositories
 {
-    public interface IProdcutRepository : IBaseRepository<Product>
+    public interface IProductRepository : IBaseRepository<Product>
     {
     }
 }
